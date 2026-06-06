@@ -1,0 +1,14 @@
+{
+  "nome" : "kaua",
+  "receitas" : [ {
+    "descricao" : "salario",
+    "valor" : 2800.0
+  } ],
+  "despesas" : [ {
+    "descricao" : "boleto",
+    "valor" : 1815.0
+  } ],
+  "percentualNecessidades" : 50.0,
+  "percentualDesejos" : 30.0,
+  "percentualInvestimentos" : 20.0
+}
