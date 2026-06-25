@@ -1,5 +1,5 @@
 ### IntelliJ IDEA ###
-out/
+../out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 .kotlin
@@ -28,3 +28,9 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+target/
+*.class
+usuario.json
+.idea/
+*.iml
