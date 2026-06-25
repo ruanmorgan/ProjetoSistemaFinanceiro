@@ -1,6 +1,5 @@
 package Codigo;
 
-import Codigo.Usuario;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
@@ -8,9 +7,9 @@ import java.io.IOException;
 
 public class PersistenciaJSON {
 
-    public static void salvar(Usuario usuario) {
+    private static final ObjectMapper mapper = new ObjectMapper();
 
-        ObjectMapper mapper = new ObjectMapper();
+    public static void salvar(Usuario usuario) {
 
         try {
 
@@ -26,8 +25,6 @@ public class PersistenciaJSON {
     }
 
     public static Usuario carregar() {
-
-        ObjectMapper mapper = new ObjectMapper();
 
         try {
 

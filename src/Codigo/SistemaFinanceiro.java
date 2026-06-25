@@ -244,6 +244,14 @@ public class SistemaFinanceiro extends Application {
         double desejos =
                 Double.parseDouble(textoDesejos);
 
+        if (necessidades < 0 || desejos < 0) {
+
+            mostrarAlerta(
+                    "Os percentuais não podem ser negativos!");
+
+            return;
+        }
+
         if (necessidades + desejos > 100) {
 
             mostrarAlerta(
